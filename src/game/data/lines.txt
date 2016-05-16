@@ -1,0 +1,158 @@
+/ specials
+sp_leech leech
+sp_poison poison
+sp_daze daze
+sp_exhaust exhaust
+sp_priority fast
+sp_builder builder
+sp_defensive defensive
+sp_shaken shake
+sp_blind blind
+sp_strengthen strengthen
+sp_weaken weaken
+sp_accurate accurate
+sp_antiPriority slow
+sp_mirror mirror
+/ name generator
+ng_manS John
+* Samuel
+* Todd
+* Hector
+* Walter
+* Alex
+* Benjamin
+ng_manE Bill
+ng_womanS Carla
+* Lisa
+* Nina
+* Rosemary
+* Ethel
+* Tiffany
+* Alice
+ng_womanE Colleen
+ng_manNS Bandit
+* Surgeon
+* Duke
+* Pugilist
+ng_manNE Dancer
+ng_ghostNS Swamplight
+* Mirage
+* Sneak
+* Blur
+ng_ghostNE Spook
+ng_beastNS Coyote
+* Tracker
+* Desert
+* Fang
+ng_beastNE Wildman
+ng_cursedNS Hellfire
+* Devil's Lash
+* Damned
+* Faithless
+ng_cursedNE Loco
+ng_lastS Rose
+* Kennedy
+* Taylor
+* West
+* Hall
+* Wright
+* Clark
+* Hamilton
+* Nelson
+* Thompson
+* Reed
+* Knight
+* Phillips
+* Fuller
+* Miller
+* Powers
+* Wilson
+* Beck
+* Roberts
+* Pearson
+* Cooper
+* Pierce
+* Archer
+* Smith
+* Lowe
+ng_lastE Freeman
+/ titles
+cls_warrior Fightin' Man
+cls_warriorF Fightin' Woman
+cls_rogue Knave
+cls_rogueF Knavess
+cls_theurge Saint
+cls_theurgeF Saintess
+cls_rassler Rassler
+cls_rasslerF Rassler
+cls_sinner Sinner
+cls_sinnerF Sinner
+/ attacks
+at_flail Flail
+at_flailD Sometimes you can't do anything but struggle against death.
+at_unarmed Unarmed
+at_unarmedD Actual unarmed techniques will get you a lot further than wild flailing.
+at_mirror Imitate
+at_mirrorD You don't need to know how to do something, really, if you can mimic someone else.
+at_blade Blade
+at_bladeD A sharp sword will cut up any enemy, if your technique is up to snuff.
+at_axe Axe
+at_axeD If you actually want to kill someone, hitting them hard with an axe works just fine.
+at_counter Counter
+at_counterD Hitting as fast as possible is nice and all, but if you want to win a slugfest you might want to try to parry first.
+at_tactics Tactics
+at_tacticsD Maybe thinking before you act will help.
+at_buzz Buzz
+at_buzzD A buzzard is so bladed it can cut a folk just by diving at them.
+at_crossbow Crossbow
+at_crossbowD A crossbow bolt between the eyes will kill Saint and Sinner alike.
+at_poisonSting Poison Sting
+at_poisonStingD Some may call a poisoned dagger cheating, but if it works it works.
+at_hiddenBlade Hidden Blade
+at_hiddenBladeD Knowing how to hide things in your sleeves is good for a card shark and an assassin alike. It's especially impressive if you have no sleeves.
+at_blindside Blindside
+at_blindsideD The good ol' eye-jab is a classic of dirty fighting.
+at_lifeDrain Life Drain
+at_lifeDrainD The world owes a Saint, and you can cash in to get a bit of someones life.
+at_daze Daze
+at_dazeD All you have to do is take a bit of someone's mind away, and they will have a hard time concentrating.
+at_skim Skim
+at_skimD You don't always have time to do a full job, but a half-job of life draining can do.
+at_hammer Hammer
+at_hammerD Any self-respecting Saint considers an edged weapon uncouth.
+at_bite Bite
+at_biteD A good set of jaws might not hurt as much as a sword, but its still pretty nasty.
+at_growl Growl
+at_growlD A good loud growl can give your enemy a real scare.
+at_tackle Tackle
+at_tackleD If you want to interrupt an enemy, a flying tackle is a pretty safe way to do it.
+at_rage Rage
+at_rageD Giving in to your primal anger can have some pretty terrifying results.
+at_gore Gore
+at_goreD If you've got yourself some horns, why not use them as a weapon?
+at_headbutt Headbutt
+at_headbuttD If you ain't got no horns, a headbutt isnt quite as effective.
+at_bash Bash
+at_bashD Any Sinner who knows a lick about fighting learns to throw a good haymaker.
+at_cursedHammer Cursed Hammer
+at_cursedHammerD It's not easy to shape your Vice into a weapon, but you gotta learn to work with what you have.
+at_disassemble Disassemble
+at_disassembleD A lot of Vice at once can straight-up destroy someone's body.
+at_sicken Sicken
+at_sickenD For someone who ain't a Sinner, a gift of Vice is real unpleasant.
+at_faintTouch Faint Touch
+at_faintTouchD Ain't nothing that can stop the touch of a ghost.
+at_fade Fade
+at_fadeD If you're a ghost, stopping a second to catch your breath is actually pretty safe.
+at_ghostBlow Ghost Blow
+at_ghostBlowD Just because you're a ghost doesn't mean you can't hit hard.
+at_spook Spook
+at_spookD Most people wouldn't consider scaring someone an attack, but most people ain't a ghost like you.
+/ items
+it_hardtack Hardtack
+it_hardtackD Hardtack is a great food for travelers and people who hate their teeth.
+it_cake Cake
+it_cakeD There ain't no denying that cake is a special treat. Well, beastfolk don't like it much, but that's about it.
+it_water Flask of Water
+it_waterD You can't really go wrong with fresh water.
+/ end of file

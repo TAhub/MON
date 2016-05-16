@@ -1,0 +1,445 @@
+SHEET:
+/ name width height
+sh_body 60 120
+sh_face 40 12
+sh_proj 50 50
+sh_weapon 60 50
+sh_tile 40 40
+sh_underTile 40 8
+sh_monster 100 100
+/
+/
+TILE:
+/ name sheet number color undertile
+tl_rock1 sh_tile 0 0xD99999 tl_rockUnder1
+tl_rock2 sh_tile 1 0xD99999 tl_rockUnder2
+tl_rock3 sh_tile 0 0xDB9D9D tl_rockUnder3
+tl_rock4 sh_tile 1 0xDB9D9D tl_rockUnder4
+tl_rockUpper sh_tile 2 0xBF7272 tl_rockUpperUnder
+/ undertiles
+tl_rockUnder1 sh_underTile 0 0xC98080 none
+tl_rockUnder2 sh_underTile 1 0xC98080 none
+tl_rockUnder3 sh_underTile 0 0xC98282 none
+tl_rockUnder4 sh_underTile 1 0xC98282 none
+tl_rockUpperUnder sh_underTile 2 0xAF7272 none
+/
+/
+FEATURE:
+/ name sheet numberM numberF xAdd yAdd
+/ body
+ft_humanBody sh_body 0 1 1000 1000
+ft_rassBody sh_monster 0 0 1000 1000
+ft_buzzardBody sh_monster 1 1 1000 1000
+/ eye
+ft_humanEye sh_face 0 0 1004 1014
+/ pupil
+ft_humanPupil sh_face 1 1 1004 1014
+ft_beastManPupil sh_face 3 3 1004 1014
+/ mouth
+ft_humanMouth sh_face 2 2 1024 1029
+ft_beastManMouth sh_face 4 4 1024 1029
+ft_cursedManMouth sh_face 5 5 1024 1029
+/ hair
+ft_humanHair1 sh_body 4 5 1000 1000
+ft_ghostManHair1 sh_body 12 13 1000 1000
+ft_beastManHair1 sh_body 14 15 992 990
+/ accessories
+ft_glasses sh_face 6 6 1004 1014
+ft_cigar sh_face 7 7 1024 1029
+ft_pipe sh_face 8 8 1024 1029
+ft_mask sh_face 9 9 1004 1014
+ft_backedHelmet sh_body 32 32 1000 990
+ft_helmet sh_body 33 33 1000 990
+/ outfit pieces
+ft_shirt sh_body 2 3 1000 1000
+ft_banditBind sh_body 8 9 1000 1000
+ft_pants sh_body 6 7 1000 1000
+ft_shoes sh_body 10 11 1000 1000
+ft_robe sh_body 16 17 1000 1000
+ft_greaves sh_body 18 19 1000 1000
+ft_armorTop sh_body 20 21 1000 1000
+ft_armorBottom sh_body 22 23 1000 1000
+ft_armorSkirt sh_body 24 25 1000 1000
+ft_duster sh_body 26 27 1000 1000
+ft_armorDuster sh_body 28 29 1000 1000
+ft_poncho sh_body 30 31 1000 1000
+ft_sinRobe sh_body 34 35 1000 1000
+/ projectiles
+ft_heartProj sh_proj 0 0 1007 1044
+ft_bolt sh_proj 1 1 1070 1045
+ft_jaws sh_proj 2 2 1007 1000
+ft_ghostBlow sh_proj 3 3 1052 1047
+ft_mindProj sh_proj 4 4 1007 1000
+/ weapons
+ft_sword sh_weapon 0 0 1041 1023
+ft_axe sh_weapon 1 1 1041 1023
+ft_hammer sh_weapon 2 2 1041 1023
+ft_crossbow sh_weapon 3 3 1041 1023
+ft_dagger sh_weapon 4 4 1041 1023
+ft_hiddenBlade sh_weapon 5 5 1041 1023
+ft_heartWeapon sh_proj 0 0 1041 1039
+ft_mindWeapon sh_proj 4 4 1041 1039
+ft_magicHammer sh_weapon 6 6 1041 1023
+/
+/
+RACEAPPEARANCE:
+/ name body skinColors eye pupil eyeColors hairs hairColors mouth humanType
+rcA_man ft_humanBody ftl_humanSkinC ft_humanEye ft_humanPupil ftl_humanEyeC ftl_humanHair ftl_humanHairC ft_humanMouth true
+rcA_ghostMan ft_humanBody ftl_ghostManSkinC ft_humanEye ft_humanPupil ftl_ghostManEyeC ftl_ghostManHair ftl_ghostManHairC ft_humanMouth true
+rcA_beastMan ft_humanBody ftl_beastManSkinC ft_humanEye ft_beastManPupil ftl_beastManEyeC ftl_beastManHair ftl_beastManHairC ft_beastManMouth true
+rcA_cursedMan ft_humanBody ftl_cursedManSkinC ft_humanEye ft_humanPupil ftl_cursedManEyeC ftl_humanHair ftl_cursedManHairC ft_cursedManMouth true
+/ monster race appearances
+rcA_rass ft_rassBody ftl_beastManSkinC none none none none none none false
+rcA_buzzard ft_buzzardBody ftl_buzzardSkinC none none none none none none false
+rcA_hollowman none none none none none none none none true
+/
+/
+FEATURELIST:
+/ name feature* (1-?)
+ftl_humanSkinC 0xFFECDB
+ftl_humanHairC 0x885533 0x664633
+ftl_humanEyeC 0x0066CC 0x00B276 0xC46762
+ftl_humanHair ft_humanHair1
+ftl_ghostManSkinC 0xF2EBEA
+ftl_ghostManHairC 0x99BFBF
+ftl_ghostManEyeC 0xEA6464
+ftl_ghostManHair ft_ghostManHair1
+ftl_beastManSkinC 0xAA764E
+ftl_beastManHairC 0xD29E79
+ftl_beastManEyeC 0xFFEF49
+ftl_beastManHair ft_beastManHair1
+ftl_cursedManSkinC 0xFCABAB
+ftl_cursedManHairC 0x8C6982
+ftl_cursedManEyeC 0x651E7F
+ftl_buzzardSkinC 0xF5F0F0
+/ class armor feature lists
+ftl_warriorShoes out_greaves
+ftl_warriorLower out_armorBottom out_armorSkirt
+ftl_warriorUpper out_armorTop out_armorDuster
+ftl_warriorAccessory none out_cigar
+ftl_rogueShoes out_shoes
+ftl_rogueLower out_commonPants
+ftl_rogueUpper out_banditBind out_commonShirt out_duster
+ftl_rogueAccessory none out_glasses out_cigar out_mask
+ftl_theurgeShoes out_shoes
+ftl_theurgeLower none
+ftl_theurgeUpper out_robeBlue
+ftl_theurgeAccessory none out_glasses out_pipe
+ftl_rasslerShoes none out_shoes
+ftl_rasslerLower out_commonPants
+ftl_rasslerUpper out_poncho
+ftl_rasslerAccessory none out_pipe
+ftl_sinnerShoes out_greaves
+ftl_sinnerLower none
+ftl_sinnerUpper out_sinRobe
+ftl_sinnerAccessory none out_helmet out_cigar
+ftl_hollowmanShoes none out_rustyGreaves
+ftl_hollowmanLower out_rustyArmorBottom out_rustyArmorSkirt
+ftl_hollowmanUpper out_rustyArmorTop
+ftl_hollowmanAccessory out_rustyHelmet
+/ tilesets
+/ name toptile othertiles
+ftl_tileset1 tl_rockUpper tl_rock1 tl_rock2 tl_rock3 tl_rock4
+/ encountersets
+ftl_encset1 enc_rass enc_tameRass1 enc_tameRass2 enc_buzzard enc_hollowman
+/
+/
+OUTFITBIT:
+/ name feature color
+/ shirts
+out_commonShirt ft_shirt 0xCD9149
+out_banditBind ft_banditBind 0xCD9149
+out_robeBlue ft_robe 0x5449CC
+out_armorTop ft_armorTop 0x9999AA
+out_sinRobe ft_sinRobe 0x9999AA
+out_rustyArmorTop ft_armorTop 0xD36921
+out_duster ft_duster 0x9999AA
+out_armorDuster ft_armorDuster 0x9999AA
+out_poncho ft_poncho 0xCD9149
+/ pants
+out_commonPants ft_pants 0x72442D
+out_armorBottom ft_armorBottom 0x9999AA
+out_armorSkirt ft_armorSkirt 0x9999AA
+out_rustyArmorBottom ft_armorBottom 0xD36921
+out_rustyArmorSkirt ft_armorSkirt 0xD36921
+/ shoes
+out_shoes ft_shoes 0x40433C
+out_greaves ft_greaves 0x9999AA
+out_rustyGreaves ft_greaves 0xD36921
+/ accessories
+out_glasses ft_glasses 0xBAB6B5
+out_mask ft_mask 0x4C362C
+out_cigar ft_cigar 0x999999
+out_pipe ft_pipe 0x999999
+out_rustyHelmet ft_backedHelmet 0xD36921
+out_helmet ft_helmet 0x9999AA
+/
+/
+PROGRESSIONDATA:
+/name minLevel extraAttacksMin extraAttacksMax encounterSizeMin encounterSizeMax playerStartLevel
+* 1 0 0 1 1 2
+* 5 0 1 1 2 3
+* 10 0 2 1 4 4
+* 15 1 2 2 4 5
+* 20 1 3 3 4 6
+* 25 2 3 3 5 7
+* 30 3 3 4 5 8
+/
+/
+RACE:
+/ name appearance attackList stat* (2-?) stat*Progression (2-?) nameGen synerStat
+rc_man rcA_man atklist_man 1 1 1 1 10 10 10 10 ng_man st_smr
+rc_ghostMan rcA_ghostMan atklist_ghostMan 0 2 1 1 0 25 10 10 ng_ghostMan st_spd
+rc_beastMan rcA_beastMan atklist_beastMan 2 1 1 0 25 10 10 0 ng_beastMan st_sag
+rc_cursedMan rcA_cursedMan atklist_cursedMan 2 0 1 1 25 0 10 10 ng_cursedMan st_str
+/ monster races
+rc_rass rcA_rass atklist_rass 10 5 9 1 100 55 100 0 none st_str
+rc_buzzard rcA_buzzard atklist_buzzard 7 11 5 1 60 100 60 0 none st_spd
+rc_hollowman rcA_hollowman atklist_hollowman 8 8 10 3 70 70 100 25 none st_sag
+/
+/
+CLASS:
+/ name type attackList stat* (2-?) stat*Progression (2-?) outfitSetStart title
+/ note that player classes have base stats that are a bit low because they have player race bonuses too
+cls_fightingman typ_steel atklist_warrior 10 8 5 4 100 100 60 50 ftl_warriorShoes @cls_warrior
+cls_knave typ_clever atklist_rogue 4 10 5 8 50 100 60 100 ftl_rogueShoes @cls_rogue
+cls_saint typ_mystic atklist_theurge 5 4 10 8 60 50 100 100 ftl_theurgeShoes @cls_theurge
+/ monster classes
+cls_rassler typ_beast atklist_rassler 8 5 10 4 100 60 100 50 ftl_rasslerShoes @cls_rassler
+cls_sinner typ_unnatural atklist_sinner 10 5 4 8 100 60 50 100 ftl_sinnerShoes @cls_sinner
+cls_hollowman typ_ghost none 0 0 0 0 0 0 0 0 ftl_hollowmanShoes none
+/ blank classes
+cls_beastType typ_beast none 0 0 0 0 0 0 0 0 none none
+cls_ghostType typ_ghost none 0 0 0 0 0 0 0 0 none none
+cls_unnaturalType typ_unnatural none 0 0 0 0 0 0 0 0 none none
+/
+/
+COMBINATION:
+/ name class race playerUsable
+/ player combinations
+comb_fightfolk cls_fightingman rc_man true
+comb_knavefolk cls_knave rc_man true
+comb_saintfolk cls_saint rc_man true
+comb_fightghost cls_fightingman rc_ghostMan true
+comb_knaveghost cls_knave rc_ghostMan true
+/ ghost men cannot become saints
+comb_fightbeast cls_fightingman rc_beastMan true
+comb_knavebeast cls_knave rc_beastMan true
+comb_saintbeast cls_saint rc_beastMan true
+comb_fightsin cls_fightingman rc_cursedMan true
+comb_knavesin cls_knave rc_cursedMan true
+/ cursed men cannot become saints
+/ non-player combinations
+comb_hollowman cls_hollowman rc_hollowman false
+comb_rass cls_beastType rc_rass false
+comb_buzzard cls_beastType rc_buzzard false
+comb_rasslerfolk cls_rassler rc_man false
+comb_rasslerbeast cls_rassler rc_beastMan false
+comb_sinner cls_sinner rc_cursedMan false
+/
+/
+ENCOUNTER:
+/ name fixedPerson extras
+/ enc_knaves1 comb_knavefolk comb_knavefolk comb_knavebeast
+enc_rass comb_rass comb_rass
+enc_tameRass1 comb_rasslerfolk comb_rass
+enc_tameRass2 comb_rasslerbeast comb_rass
+enc_buzzard comb_buzzard comb_buzzard
+enc_hollowman comb_hollowman comb_hollowman
+enc_sinner comb_sinner comb_sinner
+/
+/
+MAPTYPE:
+/ name tileset encounterset
+map_test ftl_tileset1 ftl_encset1
+/
+/
+NAMEGEN:
+/ name maleStart maleEnd femaleStart femaleEnd nickStart nickEnd lastStart lastEnd
+ng_man @ng_manS @ng_manE @ng_womanS @ng_womanE @ng_manNS @ng_manNE @ng_lastS @ng_lastE
+ng_ghostMan @ng_manS @ng_manE @ng_womanS @ng_womanE @ng_ghostNS @ng_ghostNE @ng_lastS @ng_lastE
+ng_beastMan @ng_manS @ng_manE @ng_womanS @ng_womanE @ng_beastNS @ng_beastNE @ng_lastS @ng_lastE
+ng_cursedMan @ng_manS @ng_manE @ng_womanS @ng_womanE @ng_cursedNS @ng_cursedNE @ng_lastS @ng_lastE
+/
+/
+TYPE:
+/ name color vs* (1-@types) immuneTo (1-?)
+typ_steel 0x6666DD dm_o dm_o dm_- dm_+ dm_o dm_N sp_exhaust
+typ_clever 0xDD6666 dm_o dm_+ dm_+ dm_- dm_+ dm_N sp_exhaust
+typ_mystic 0x66DD66 dm_+ dm_- dm_- dm_o dm_N dm_+
+typ_beast 0xDDDD66 dm_- dm_+ dm_o dm_o dm_- dm_N sp_exhaust
+typ_unnatural 0x666666 dm_o dm_- dm_+ dm_+ dm_- dm_o sp_daze
+typ_ghost 0xDDDDDD dm_o dm_+ dm_- dm_o dm_- dm_o sp_leech sp_poison sp_defensive sp_blind sp_weaken
+/
+/
+DAMAGEMULT:
+/ name percent
+dm_+ 200
+dm_o 100
+dm_- 50
+dm_N 0
+/
+/
+STAT:
+/ name
+st_lvl
+st_str
+st_spd
+st_sag
+st_smr
+/
+/
+DERIVEDFORMULA:
+/ name constant stat* stat*Per
+dform_health 35 st_str 200 st_lvl 250
+dform_power 20 st_sag 100 st_lvl 100
+dform_initiative 0 st_spd 300 st_smr 100 st_lvl 100
+dform_accuracy 0 st_smr 100 st_spd 25 st_lvl 25
+dform_evasion 5 st_spd 100 st_smr 25 st_lvl 25
+dform_resistance 15 st_lvl 200 st_sag 50 st_str 50
+dform_levelCost 300 st_lvl 100
+dform_expReward 200 st_lvl 25
+/
+/
+SPECIAL:
+/ name *derivedformula name
+sp_leech 90 st_smr 25 @sp_leech
+sp_poison 0 st_lvl 200 st_smr 100 @sp_poison
+sp_daze 5 st_lvl 100 st_smr 50 @sp_daze
+sp_exhaust 6 st_lvl 50 st_smr 25 @sp_exhaust
+sp_priority 45 st_lvl 100 st_smr 50 @sp_priority
+sp_builder 8 st_smr 10 @sp_builder
+sp_defensive 50 st_smr 25 @sp_defensive
+sp_shaken 0 st_lvl 200 st_smr 100 @sp_shaken
+sp_blind 2 st_lvl 10 st_smr 25 @sp_blind
+sp_strengthen 15 st_smr 30 @sp_strengthen
+sp_weaken 12 st_smr 20 @sp_weaken
+sp_accurate 30 st_lvl 25 st_smr 100 @sp_accurate
+sp_antiPriority 60 @sp_antiPriority
+sp_mirror @sp_mirror
+/
+/
+STATUSEFFECT:
+/ name value shakeChance
+stf_poison 10 30
+stf_shaken 50 50
+/
+/
+ATTACKLIST:
+/ name move* (1-?)
+/ player class attack lists
+atklist_warrior at_blade at_axe at_counter at_tactics
+atklist_rogue at_hiddenBlade at_crossbow at_poisonSting at_blindside
+atklist_theurge at_lifeDrain at_skim at_daze at_hammer
+/ player race attack lists
+atklist_man at_unarmed at_mirror at_axe at_hiddenBlade at_hammer
+atklist_ghostMan at_faintTouch at_spook at_fade
+atklist_beastMan at_bite at_rage at_tackle
+atklist_cursedMan at_bash at_cursedHammer at_sicken
+/ monster race attack lists
+atklist_rass at_gore at_bite at_growl at_tackle
+atklist_buzzard at_buzz at_rage at_counter at_unarmed
+atklist_hollowman at_blade at_spook at_faintTouch at_ghostBlow
+/ monster class attack lists
+atklist_rassler at_headbutt at_bite at_rage at_growl at_tackle
+atklist_sinner at_bash at_cursedHammer at_sicken at_disassemble at_axe
+/
+/
+ATTACKANIMMOVETYPE:
+/ name
+aamt_lunge
+aamt_shoot
+aamt_suck
+aamt_none
+aamt_invisiLunge
+aamt_invisiNone
+/
+/
+ATTACKANIM:
+/ name moveType heldObject heldObjectColor projectile projectileColor
+/ melee attacks
+aanim_melee aamt_lunge none 0 none 0
+aanim_sword aamt_lunge ft_sword 0x9999AA none 0
+aanim_axe aamt_lunge ft_axe 0x9999AA none 0
+aanim_hammer aamt_lunge ft_hammer 0x9999AA none 0
+aanim_dagger aamt_lunge ft_dagger 0x9999AA none 0
+aanim_hiddenBlade aamt_lunge ft_hiddenBlade 0x9999AA none 0
+aanim_heartHand aamt_lunge ft_heartWeapon none none 0
+aanim_mindHand aamt_lunge ft_mindWeapon none none 0
+aanim_magicHammer aamt_lunge ft_magicHammer none none 0
+aanim_invisiMelee aamt_invisiLunge none 0 none 0
+/ projectile attacks
+aanim_crossbow aamt_shoot ft_crossbow 0x9999AA ft_bolt 0x9999AA
+aanim_growl aamt_shoot none 0 ft_jaws none
+aanim_ghostBlow aamt_shoot none 0 ft_ghostBlow none
+/ leech attacks
+aanim_leech aamt_suck none 0 ft_heartProj none
+aanim_daze aamt_suck none 0 ft_mindProj none
+/ none
+aanim_none aamt_none none 0 none 0
+aanim_invisiNone aamt_invisiNone none 0 none 0
+/
+/
+ATTACK:
+/ name type damage(constant, stat, percent) cost special* (1-2) attackAnim name
+/ chameleon type
+at_flail none 6 st_lvl 50 0 none none aanim_melee @at_flail
+at_unarmed none 8 st_lvl 100 1 none none aanim_melee @at_unarmed
+/ mirror moves
+at_mirror none 0 st_lvl 0 10 sp_mirror none aanim_none @at_mirror
+/ steel type
+at_blade typ_steel 5 st_spd 100 5 none none aanim_sword @at_blade
+at_axe typ_steel 0 st_str 200 10 none none aanim_axe @at_axe
+at_counter typ_steel 2 st_spd 90 8 sp_defensive sp_antiPriority aanim_sword @at_counter
+at_tactics typ_steel 0 st_str 0 15 sp_defensive sp_strengthen aanim_none @at_tactics
+/ unique steel type
+at_buzz typ_steel 5 st_spd 80 6 sp_priority none aanim_melee @at_buzz
+/ clever type
+at_crossbow typ_clever 2 st_spd 175 9 sp_accurate none aanim_crossbow @at_crossbow
+at_poisonSting typ_clever 5 st_smr 100 10 sp_poison none aanim_dagger @at_poisonSting
+at_hiddenBlade typ_clever 5 st_spd 100 7 sp_priority none aanim_hiddenBlade @at_hiddenBlade
+at_blindside typ_clever 0 st_smr 100 5 sp_blind none aanim_melee @at_blindside
+/ mystic type
+at_lifeDrain typ_mystic 0 st_sag 100 10 sp_leech none aanim_leech @at_lifeDrain
+at_daze typ_mystic 0 st_smr 50 5 sp_daze none aanim_daze @at_daze
+at_skim typ_mystic 2 st_sag 60 8 sp_leech sp_priority aanim_leech @at_skim
+at_hammer typ_mystic 5 st_sag 100 5 none none aanim_hammer @at_hammer
+/ beast type
+at_bite typ_beast 3 st_str 100 2 none none aanim_melee @at_bite
+at_growl typ_beast 0 st_sag 0 5 sp_shaken none aanim_growl @at_growl
+at_tackle typ_beast 10 st_sag 100 20 sp_defensive sp_priority aanim_melee @at_tackle
+at_rage typ_beast 8 st_str 90 10 sp_strengthen none aanim_melee @at_rage
+/ unique beast type
+at_gore typ_beast 1 st_str 200 11 none none aanim_melee @at_gore
+at_headbutt typ_beast 3 st_str 150 13 none none aanim_melee @at_headbutt
+/ unnatural type
+at_bash typ_unnatural 5 st_str 100 5 none none aanim_melee @at_bash
+at_cursedHammer typ_unnatural 4 st_str 125 10 sp_shaken none aanim_magicHammer @at_cursedHammer
+at_disassemble typ_unnatural 5 st_smr 200 20 none none aanim_heartHand @at_disassemble
+at_sicken typ_unnatural 10 st_smr 100 8 sp_exhaust none aanim_mindHand @at_sicken
+/ ghost type
+at_faintTouch typ_ghost 0 st_spd 110 8 sp_priority sp_accurate aanim_invisiMelee @at_faintTouch
+at_fade typ_ghost 0 st_sag 0 5 sp_builder sp_defensive aanim_invisiNone @at_fade
+at_ghostBlow typ_ghost 0 st_sag 200 10 none none aanim_ghostBlow @at_ghostBlow
+at_spook typ_ghost 2 st_sag 50 8 sp_weaken none aanim_invisiMelee @at_spook
+/
+/
+ITEMTYPE:
+/ name
+itt_attack
+itt_food
+itt_drink
+/
+/
+ITEM:
+/ food
+/ name name type maxStack synBonus bonusTo
+it_hardtack @it_hardtack 3 itt_food 0
+it_cake @it_cake 1 itt_food 40 rcA_man rcA_ghostMan rcA_cursedMan
+/ drink
+/ name name type maxStack energyRestored
+it_water @it_water 6 itt_drink 30
+/
+/
+/ database end
+FILLERDATA:
